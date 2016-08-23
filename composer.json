@@ -3,7 +3,8 @@
         "symfony/http-foundation": "^3.0",
         "symfony/routing": "^3.0",
         "symfony/http-kernel": "^3.0",
-	"phpunit/phpunit": "5.4.*"
+	"phpunit/phpunit": "5.4.*",
+        "symfony/event-dispatcher": "^3.1"
     },
     "require-dev": {
     },
