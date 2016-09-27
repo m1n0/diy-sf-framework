@@ -23,7 +23,7 @@ class GoogleListener implements EventSubscriberInterface {
       return;
     }
 
-    $response->setContent($response->getContent() . 'GA CODE');
+    $response->setContent($response->getContent() . ' ...');
   }
 
   public static function getSubscribedEvents()
