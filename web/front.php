@@ -23,7 +23,9 @@ $dispatcher->addSubscriber(new \Simplex\ContentLengthListener());
 $framework = new Simplex\Framework($dispatcher, $matcher, $resolver, $argumentResolver);
 $framework = new HttpKernel\HttpCache\HttpCache(
   $framework,
-  new HttpKernel\HttpCache\Store(__DIR__ . '/../cache')
+  new HttpKernel\HttpCache\Store(__DIR__.'/../cache'),
+  new HttpKernel\HttpCache\Esi(),
+  ['debug' => true]
 );
 $response = $framework->handle($request);
 

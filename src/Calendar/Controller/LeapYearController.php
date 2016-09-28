@@ -14,7 +14,7 @@ class LeapYearController {
       $response = new Response('Yep, this is a leap year! ' . rand());
     }
     else {
-      $response = new Response('Nope, this is not a leap year.');
+      $response = new Response('Nope, this is not a leap year. ' . rand());
     }
 
     $response->setTtl(10);
